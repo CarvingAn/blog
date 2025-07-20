@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<p>
+				<iframe src="//player.bilibili.com/player.html?bvid=BV1gJ4m1h7vd&cid=1467988278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" height="500rem"></iframe>
+			</p>
+			<p>
+				<label>
+					在我们网站您将看到，
+					<ul>
+						<li>鞋盒电脑</li>
+						<li>协和客机</li>
+						<li>协和广场</li>
+						<li>协合编码</li>
+						<li>谐和<small>(和谐)</small>铁路</li>
+					</ul>
+				</label>
+			</p>
+			<p>各位早上中午晚上好，我是 LatitudeCrosser，无拘无束的维度旅行者。</p>
+		</main>
+		<Footer />
+	</body>
+</html>
